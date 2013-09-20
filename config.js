@@ -8,6 +8,13 @@ require.config({
 
 	// override paths for libs
 	paths: {
-		'zepto-ajax': 'lib/zepto-ajax/zepto.js'
+		zepto: '../lib/zepto/zepto'
+	},
+
+	// shim config
+	shim: {
+		zepto: {
+			exports: '$'
+		}
 	}
 });

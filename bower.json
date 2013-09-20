@@ -2,6 +2,7 @@
 	"name": "esthry-client",
 	"dependencies": {
 		"requirejs": "2.1.8",
+		"zepto": "1.0.0",
 		"zepto-ajax": "1.0.0"
 	}
 }

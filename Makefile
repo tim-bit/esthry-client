@@ -1,11 +1,12 @@
 LIBDIR=lib
+BUILDDIR=dist
 
-all: dist
+all: $(BUILDDIR)
 
 $(LIBDIR): bower.json
 	bower install
 
-dist: node_modules src $(LIBDIR) config.js lint
+$(BUILDDIR): node_modules src $(LIBDIR) config.js Gruntfile.js
 	grunt build
 
 lint: node_modules
@@ -15,4 +16,6 @@ node_modules: package.json
 	npm install
 
 clean:
-	rm -rf node_modules $(LIBDIR)
+	rm -rf node_modules $(LIBDIR) $(BUILDDIR)
+
+.PHONY: lint

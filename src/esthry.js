@@ -1,4 +1,4 @@
 /* global define*/
-define([], function() {
-	console.log('I\'m bootstrapped!');
+define(['zepto'], function($) {
+	console.log($.ajax);
 });

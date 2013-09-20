@@ -10,7 +10,20 @@ module.exports = function(grunt) {
 				options: {
 					name: 'esthry',
 					mainConfigFile: 'config.js',
-					out: 'dist/app.js'
+					optimize: 'none',
+					out: 'dist/esthry.js'
+				}
+			}
+		},
+		uglify: {
+			options: {
+				compress: true,
+				mangle: true,
+				report: 'gzip'
+			},
+			myTarget: {
+				files: {
+					'dist/esthry.min.js': ['dist/esthry.js']
 				}
 			}
 		}
@@ -19,10 +32,11 @@ module.exports = function(grunt) {
 	// load npm modules
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	// register tasks
 	grunt.registerTask('lint', ['jshint']);
-	grunt.registerTask('build', ['lint', 'requirejs']);
+	grunt.registerTask('build', ['lint', 'requirejs', 'uglify']);
 
 	// set default task
 	grunt.registerTask('default', ['lint']);
