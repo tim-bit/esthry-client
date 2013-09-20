@@ -1,0 +1,6 @@
+{
+	"name": "esthry-client",
+	"dependencies": {
+		"zepto-ajax": "1.0.0"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"name": "esthry-client",
+	"description": "Client app for esthry",
+	"keywords": [
+		"amazon",
+		"aws",
+		"s3",
+		"image",
+		"video"
+	],
+	"version": "0.0.1",
+	"author": {
+		"name": "Tim Kuminecz",
+		"email": "tkuminecz@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/tkuminecz/esthry-client.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tkuminecz/esthry-client/issues"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"grunt": "0.4.1",
+		"grunt-cli": "0.1.9",
+		"grunt-contrib-jshint": "0.6.4"
+	},
+	"readmeFilename": "README.md"
+}
