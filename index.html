@@ -1,10 +1,43 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Esthry</title>
+
+	<meta name="viewport" contains="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="dist/esthry.css" />
+
 	<script type="text/javascript" data-main="config" src="lib/requirejs/require.js"></script>
 </head>
 <body>
+
+	<div>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				</button>
+				<a class="navbar-brand" href="#">Esthry</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a id="nav-collections" href="#">Collections</a></li>
+					<li><a id="nav-assets" href="#">Assets</a></li>
+					<li><a id="nav-tags" href="#">Tag</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div id="resource-list" class="panel panel-default" style="opacity: 0;">
+		<div class="panel-heading">
+			<h3 class="panel-title"></h3>
+		</div>
+		<div class="panel-body">
+			<ul class="list-group">
+			</ul>
+		</div>
+	</div>
+
 
 </body>
 </html>

@@ -1,8 +1,10 @@
 {
 	"name": "esthry-client",
 	"dependencies": {
-		"requirejs": "2.1.8",
-		"zepto": "1.0.0",
-		"zepto-ajax": "1.0.0"
+		"bootstrap": "3.0.0",
+		"lodash": "2.x",
+		"q": "0.x",
+		"requirejs": "2.x",
+		"zepto": "1.x"
 	}
 }
