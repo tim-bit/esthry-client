@@ -1,10 +1,9 @@
 {
-	"name": "esthry-client",
-	"dependencies": {
-		"bootstrap": "3.0.0",
-		"lodash": "2.x",
-		"q": "0.x",
-		"requirejs": "2.x",
-		"zepto": "1.x"
-	}
+  "name": "esthry-client",
+  "devDependencies": {
+    "lodash": "~3.4.0",
+    "q": "1.0.1",
+    "almond": "~0.3.1",
+    "jan": "~1.0.2"
+  }
 }
