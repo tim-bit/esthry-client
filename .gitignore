@@ -1,4 +1,6 @@
 *.swp
-dist
-lib
+*.swo
+bower_components
+build
 node_modules
+npm-debug.log
