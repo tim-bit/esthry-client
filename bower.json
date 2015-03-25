@@ -1,7 +1,8 @@
 {
   "name": "esthry-client",
   "description": "Javascript client for interacting with esthry-api",
-  "version": "0.0.3",
+  "version": "0.0.4",
+  "main": "dist/esthry.js",
   "devDependencies": {
     "lodash": "~3.4.0",
     "q": "1.0.1",
