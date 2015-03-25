@@ -1,14 +1,15 @@
 {
   "name": "esthry-client",
-  "description": "Client app for esthry-api",
+  "description": "Javascript client for interacting with esthry-api",
   "keywords": [
     "amazon",
     "aws",
     "s3",
     "image",
-    "video"
+    "video",
+	"esthry"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Tim Kuminecz",
     "email": "tkuminecz@gmail.com"
@@ -21,9 +22,9 @@
     "url": "https://github.com/tkuminecz/esthry-client/issues"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+	"start": "node server.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "bower": "^1.3.12",
     "gulp": "^3.8.11",
