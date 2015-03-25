@@ -21,7 +21,7 @@ class Esthry {
 	getAssets() {
 		var defer = q.defer();
 
-		http.get(this.getUrl('asset/'), (err, res, data) => {
+		http.get(this.getUrl('asset'), (err, res, data) => {
 			if (err) {
 				defer.reject(err);
 			}
@@ -55,7 +55,7 @@ class Esthry {
 
 
 		http.post({
-			url: this.getUrl(`asset/`)
+			url: this.getUrl(`asset`),
 			body: JSON.stringify(opts)
 		}, (err, res, data) => {
 			if (err) {
@@ -78,7 +78,7 @@ class Esthry {
 
 		http({
 			method: 'PUT',
-			url: this.getUrl(`asset/${id}`)
+			url: this.getUrl(`asset/${id}`),
 			body: JSON.stringify(opts)
 		}, (err, res) => {
 			if (err) {
