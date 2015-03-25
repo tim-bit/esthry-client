@@ -3,24 +3,30 @@
 import http from 'jan';
 import q from 'q';
 
-export default {
-	getAssetList: function() {
-		
-	},
-	
-	getAsset: function(id) {
-		
-	},
-	
-	createAsset: function(opts) {
-		
-	},
-	
-	updateAsset: function(opts) {
-		
-	},	
-	
-	deleteAsset: function(id) {
-		
+class Esthry {
+	constructor(opts) {
+		this.opts = opts;
 	}
-};
+
+	getAssets() {
+
+	}
+
+	getAsset(id) {
+
+	}
+
+	createAsset(opts) {
+
+	}
+
+	updateAsset(opts) {
+
+	}
+
+	deleteAsset(id) {
+
+	}
+}
+
+export default Esthry;
